@@ -1,0 +1,38 @@
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+ 
+
+body{
+  background-image: url('nebulaocean.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+span{
+  display: flex;
+  justify-content: center;
+}
+
+span a {
+display: inline-block;
+ }
+
+ a :hover{
+  background-color: rgb(231, 135, 57);
+  opacity: .5;
+   
+   transition: all .5s ease;
+ }
+
+ .footerclass{
+   text-align: right;
+   margin-bottom: 20px;
+ }
+
+
