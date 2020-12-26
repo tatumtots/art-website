@@ -1,38 +1,77 @@
-h1{
-  display: flex;
-  justify-content: center;
-  margin-top: 250px;
+@font-face{
+  font-family: opensans;/* can be any Name you want*/
+  src: url(TatumsHandwriting1-Regular.ttf) format("truetype");
 }
-
- 
 
 body{
-  background-image: url('nebulaocean.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  font-family: opensans;
+  font-size: 2rem;
+}
+#blkbar{
+  height: 75px;
+  margin: -1rem;
+  background-color: black;
 }
 
-
-span{
+.headerRow  {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  border: 3px solid black;
+  align-items: center;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+/*a h2 {
+  opacity:0; /* Completely invisible. */
+  transition:1s; /* A 1 second transition. */
 }
 
-span a {
-display: inline-block;
- }
-
- a :hover{
-  background-color: rgb(231, 135, 57);
-  opacity: .5;
-   
-   transition: all .5s ease;
- }
-
- .footerclass{
-   text-align: right;
-   margin-bottom: 20px;
- }
+/*a:hover h2 {
+  opacity:1; /* Completely visible. */
+}
 
 
+.logo{
+  
+}
+.listDiv{
+  
+  border: 3px solid black;
+  font-family: opensans;
+  /*font-family: 'Reenie Beanie', cursive;*/
+  font-size: 3rem;
+}
+
+#nebulaocean{
+  max-width: 100%;
+}
+
+body{
+  
+
+}
+
+ul li{
+  display:inline;
+  
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#piccont{
+  max-width:53em;
+}
+
+#whtspace{
+  min-height: 75px;
+}
+p{
+  font-color: white;
+}
+.footerDiv{
+
+}
