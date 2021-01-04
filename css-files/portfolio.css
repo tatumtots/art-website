@@ -1,0 +1,75 @@
+/*Custom Font*/
+@font-face{
+    font-family: opensans;/* can be any Name you want*/
+    src: url(TatumsHandwriting1-Regular.ttf) format("truetype");
+  }
+
+/*Decorative black bar*/
+#blkbar{
+    height: 75px;
+    margin: -1rem;
+    background-color: black;
+}
+
+.outline{
+    outline: 1px solid black;
+}
+
+/*Container wrapping heading with two colums for logo and navigation*/
+.headerWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10rem;
+    
+}
+    /*Flexbox for Navigation column*/
+        #navigation{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 2rem;
+        }
+    /*Targets nav anchors for styling*/
+            span a{
+                font-family: opensans;
+                font-size: 2.5rem;
+                color: #000000;
+                text-decoration: none;
+                background-color: transparent;
+                
+            }
+
+
+/*Container for portfolio display grid*/
+.container{
+    height: 100%;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 33rem) ;
+    grid-template-rows: repeat(5, 50rem) ;
+    grid-gap: 10px;
+    margin-top: 2rem;
+     background-color: black;
+        
+            
+}
+    /*Specs for each picture*/
+    div img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #one{
+        grid-column: 1 / 2;
+
+    }
+    #two{
+        grid-column: 2 / -1;
+    }
+
+#socialLinks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10rem;
+    
+}
