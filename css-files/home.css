@@ -3,53 +3,55 @@
   src: url(TatumsHandwriting1-Regular.ttf) format("truetype");
 }
 
+/*Set document font*/
 body{
   font-family: opensans;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-
 #blkbar{
-  height: 75px;
+  height: 2em;
   margin: -1rem;
   background-color: black;
 }
 
+/*header row flexbox*/
 .headerRow  {
   display: flex;
   justify-content: space-between;
-  border: 3px solid black;
   align-items: center;
   margin-right: 3rem;
   margin-left: 3rem;
 }
+/* logo columns and navigation column*/
+  .logo{
+    width: 7em;
+  }
+  /* List flexbox and effects*/
+  .listDiv{
+    display: flex;
+    align-items: flex-start;
+  }
+    ul li{
+      display: inline;
+      list-style: none;
+      transition: all .2s ease-in-out; 
+    }
 
-.listDiv{
-  display: flex;
-  align-items: flex-start;
-}
+    ul li:hover{
+      font-size: larger;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+    }
 
-#list{
-border: 3px solid black;
-font-family: opensans;
-/*font-family: 'Reenie Beanie', cursive;*/
-font-size: 3rem;
-}
-ul li{
-  display:inline; 
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
-  background-color: transparent;
-}
 /* CSS for picture and text*/
-
 .pictureDiv{
   display: flex;
   justify-content: center;
   position: relative;
-  
+  margin: 2em;
 }
 
 #nebulaocean {
@@ -58,7 +60,7 @@ a {
   justify-content: center;
   display: block;
   max-width: 90%;
-  height: auto;
+  max-width: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
 
@@ -75,7 +77,7 @@ a {
 }
 .colorDiv{
   display: inline-block;
-  background-color: orange;
+  background-color: rgb(233, 115, 19);
 }
 
 .pictureDiv:hover #nebulaocean{
@@ -86,6 +88,18 @@ a {
   opacity: 1;
 
 }
-.pictureDiv:hover .colorDiv{
+.footerDiv{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  align-items: center;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 2rem;
+  height: 2em;
+  background-color: black;
+}
 
+i{
+  color: white;
 }
