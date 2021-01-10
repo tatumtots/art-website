@@ -1,0 +1,83 @@
+@font-face{
+    font-family: opensans;/* can be any Name you want*/
+    src: url(TatumsHandwriting1-Regular.ttf) format("truetype");
+  }
+  
+  /*Set document font*/
+  body{
+    font-family: opensans;
+    font-size: 2rem;
+  }
+
+.container{
+  border: 1px solid black;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 5vh 10vh auto 20vh;
+  grid-template-areas: 
+  "b b b b"
+  "l n n n"
+  "p p fo fo"
+  "f f f f"
+}
+  
+/*Blackbar*/
+#blackbar{
+  grid-area: b;
+  background: black;
+  margin: -1rem -1rem 0rem;
+}
+
+/*Logo*/
+#logo{
+  grid-area: l;
+  justify-self: center;
+ /* position: -webkit-sticky;
+  position: sticky;
+  top: 0;*/
+  transform: translateY(-40px);
+  background:coral;
+}
+.logoBox img{
+  max-width: 7em;
+}
+
+/*Navigation*/
+#navbar{
+  grid-area: n;
+  justify-self: center;
+  background:darkcyan;
+  /*position: -webkit-sticky;
+  position: sticky;
+  top: 0;*/
+}
+  ul li{
+    display: inline;
+    list-style: none;
+    font-size: 4vh;
+    transition: all .2s ease; 
+  }
+  ul li:hover{
+    font-size: 3rem;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #picture{
+grid-area: p;
+background-color: darkolivegreen;
+  }
+
+  #form{
+    grid-area: fo;
+    background-color: darkseagreen;
+  }
+  #footer{
+      grid-area: f;
+      background-color: black;
+      margin: 1rem -1rem -1rem;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+  }

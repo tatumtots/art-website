@@ -9,70 +9,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="\css-files\home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   
 </head>
 
-<body>
+<body class="container">
 
 <!--Black Bar-->
-  <div id="blkbar">
+  <div id="blackbar">Blackbar</div>
+
+<!--Logo-->
+  <div id="logo">
+    <div class="logoBox">
+      <img src="image-files/TatumSignature1.png" />
+    </div>
   </div>
 
-<!--Header Row-->
-  <!--Logo-->
-  <div class="headerRow">
-    <div >
-      <img class="logo" src="\image-files\TatumSignature1.png" alt="Tatum Bray">
-    </div>
 
-  <!--Navbar-->
-    <span class="listDiv">
-        <ul id="list">
+<!--Navigation-->
+  <nav id="navbar">
+    <span class="navSpan">
+      <ul>
+        <li><a href="#">Home / </a></li>
+        <li><a href="art_portfolio.html">Portfolio / </a></li>
+        <li><a href="art_about.html">About / </a></li>
+        <li><a href="art_contact.html">Contact</a></li>
+      </ul>
+    </span>
+  </nav>
+
+<!--Picture-->
+  <div id="picture">
+      <img id="ocean" src="image-files/nebulaocean.jpg"/>
+      <div class="colorDiv"></div>
+      <div class="textDiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas,
+         dolorum minus incidunt ea odio quidem rem labore a velit
+         Atque architecto debitis a. Reprehenderit et pariatur ipsum!</div>
+  </div>
+
+<!--Footer-->
+  <div id="footer">
+    <div class="ftext">Website By Tatum Bray 2021</div>
+    <span class="icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+    </span>
+    <div>
+      <span>
+        <ul class="footerNav">
           <li><a href="#">Home / </a></li>
           <li><a href="art_portfolio.html">Portfolio / </a></li>
           <li><a href="art_about.html">About / </a></li>
           <li><a href="art_contact.html">Contact</a></li>
         </ul>
       </span>
-  </div>
-<!--End header Row-->
-
-<!--Picture-->
-<div class="pictureDiv">
-    <div class="colorDiv">
-      <img src="image-files/nebulaocean.jpg" id="nebulaocean" alt="Nebula Ocean by Tatum Bray">
     </div>
-      <div class="textDiv">
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum excepturi
-          officiis ut maiores nostrum dolores et atque quisquam culpa porro praesentium optio
-           quia exercitationem omnis amet soluta </p>
-      </div>
-</div>
-
-<!--Footer-->
-<div class="footerDiv">
-  <span class="outline">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-facebook"></i>
-  </span>
-    
-</div>
+  </div>
 
 
-  
-
-
-  
+<script src="javascript-files/art_jquery.js"></script>
 </body>
-
-</html>
-
-
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>

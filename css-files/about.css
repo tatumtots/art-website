@@ -1,0 +1,102 @@
+/*custom text*/
+@font-face{
+    font-family: opensans;/* can be any Name you want*/
+    src: url(TatumsHandwriting1-Regular.ttf) format("truetype");
+  }
+body{
+    font-family: opensans;
+}
+.container{
+    display: grid;
+    grid-template-rows: 5vh 10vh auto 5vw;
+    grid-template-columns: .5fr auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "b b"
+        "l n"
+        "a p"
+        "f f"
+}
+
+/*Blackbar*/
+  #blackbar{
+    grid-area: b;
+    background: black;
+    margin: -1rem -1rem 0rem;
+  }
+
+/*Logo*/
+#logo{
+    grid-area: l;
+    display: flex;
+
+    border: 2px solid black;
+}
+  #logo img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+/*Navbar*/
+#navbar{
+    grid-area: n;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+  }
+    ul li{
+    font-size: 3rem;
+      display: inline;
+      list-style: none;
+      transition: all .2s ease; 
+    }
+    ul li:hover{
+      font-size: 4rem;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
+#article{
+    grid-area: a;
+    background: indigo
+}
+  h1{
+    font-size: 3rem;
+  }
+  #article p{
+    font-size: 2rem;
+  }
+#picture{
+    grid-area: p;
+    max-width: 50rem;
+}
+#footer{
+  grid-area: f;
+  background-color: black;
+  margin: 1rem -1rem -1rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position:static;
+  height: 10rem;
+  width: 20rem;
+  border: 1px solid blue;
+  
+}
+i{
+  font-size:larger;
+  color:white;
+  transition:.2s ease;
+  padding: .5rem;
+}
+i:hover{
+  font-size: 3rem;
+}
