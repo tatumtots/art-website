@@ -64,46 +64,38 @@ body{
 /*Picture*/
 #picture{
   grid-area: p;
-  justify-self: center;
-  margin: 0rem -1rem;
-  background-color: chocolate;
+  margin: 4rem;
+  background-color: rgb(233, 115, 19);
 }
 
 #picture img{
-  max-width : 100rem;
-  max-height: 100rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* CSS for picture and text*/
-.pictureDiv{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 1em 2em 2em 1em;
-}
 
 #ocean {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-
+  
 }
 .textDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 400%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
 #picture:hover #ocean{
   opacity: 0.5;
-  background-color: rgb(233, 115, 19);
+  
+  
 }
 #picture:hover .textDiv{
   opacity: 1;

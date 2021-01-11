@@ -106,14 +106,14 @@ body{
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 8;
-  background-color: rgb(145, 85, 57);
+  background-color: rgb(230, 118, 66);
 }
 .img4 {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 5;
   grid-row-end: 11;
-  background-color: rgb(241, 129, 129);
+  background-color: rgb(252, 155, 76);
 }
 .img5{
   grid-column-start: 1;
